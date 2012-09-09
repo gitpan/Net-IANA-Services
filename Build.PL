@@ -1,0 +1,47 @@
+
+use strict;
+use warnings;
+
+use Module::Build 0.3601;
+
+
+my %module_build_args = (
+  "build_requires" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Module::Build" => "0.3601",
+    "Test::More" => "0.88"
+  },
+  "configure_requires" => {
+    "File::ShareDir::Install" => "0.03",
+    "Module::Build" => "0.3601"
+  },
+  "dist_abstract" => "Makes working with named ip services easier",
+  "dist_author" => [
+    "Adam Lesperance <lespea\@gmail.com>"
+  ],
+  "dist_name" => "Net-IANA-Services",
+  "dist_version" => "0.001000",
+  "license" => "perl",
+  "module_name" => "Net::IANA::Services",
+  "recommends" => {},
+  "recursive_test_files" => 1,
+  "requires" => {
+    "Exporter::Easy" => 0,
+    "File::ShareDir" => 0,
+    "YAML::Any" => 0,
+    "perl" => "5.008",
+    "strict" => 0,
+    "utf8" => 0,
+    "warnings" => 0
+  },
+  "script_files" => [],
+  "share_dir" => {
+    "dist" => "share"
+  }
+);
+
+
+my $build = Module::Build->new(%module_build_args);
+
+$build->create_build_script;
