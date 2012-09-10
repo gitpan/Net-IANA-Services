@@ -10,7 +10,8 @@ my %module_build_args = (
     "File::Find" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
-    "Test::More" => "0.88"
+    "Test::More" => "0.88",
+    "Test::Most" => 0
   },
   "configure_requires" => {
     "File::ShareDir::Install" => "0.03",
@@ -21,7 +22,7 @@ my %module_build_args = (
     "Adam Lesperance <lespea\@gmail.com>"
   ],
   "dist_name" => "Net-IANA-Services",
-  "dist_version" => "0.001000",
+  "dist_version" => "0.002000",
   "license" => "perl",
   "module_name" => "Net::IANA::Services",
   "recommends" => {},

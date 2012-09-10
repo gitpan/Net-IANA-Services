@@ -54,7 +54,8 @@
          "requires" : {
             "File::Find" : "0",
             "File::Temp" : "0",
-            "Test::More" : "0.88"
+            "Test::More" : "0.88",
+            "Test::Most" : "0"
          }
       }
    },
@@ -71,7 +72,7 @@
          "web" : "https://github.com/lespea/net-iana-services"
       }
    },
-   "version" : "0.001000",
+   "version" : "0.002000",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -307,22 +308,22 @@
          {
             "class" : "Dist::Zilla::Plugin::Git::Check",
             "name" : "Git::Check",
-            "version" : "1.122460"
+            "version" : "1.122530"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Commit",
             "name" : "Commit_Changes",
-            "version" : "1.122460"
+            "version" : "1.122530"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Tag",
             "name" : "Git::Tag",
-            "version" : "1.122460"
+            "version" : "1.122530"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Push",
             "name" : "Git::Push",
-            "version" : "1.122460"
+            "version" : "1.122530"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",

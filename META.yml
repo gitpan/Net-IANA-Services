@@ -7,6 +7,7 @@ build_requires:
   File::Temp: 0
   Module::Build: 0.3601
   Test::More: 0.88
+  Test::Most: 0
 configure_requires:
   File::ShareDir::Install: 0.03
   Module::Build: 0.3601
@@ -40,7 +41,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Net-IANA-Services
   homepage: http://search.cpan.org/dist/Net-IANA-Services
   repository: git://github.com/lespea/net-iana-services.git
-version: 0.001000
+version: 0.002000
 x_Dist_Zilla:
   plugins:
     -
@@ -230,19 +231,19 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::Git::Check
       name: Git::Check
-      version: 1.122460
+      version: 1.122530
     -
       class: Dist::Zilla::Plugin::Git::Commit
       name: Commit_Changes
-      version: 1.122460
+      version: 1.122530
     -
       class: Dist::Zilla::Plugin::Git::Tag
       name: Git::Tag
-      version: 1.122460
+      version: 1.122530
     -
       class: Dist::Zilla::Plugin::Git::Push
       name: Git::Push
-      version: 1.122460
+      version: 1.122530
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':InstallModules'

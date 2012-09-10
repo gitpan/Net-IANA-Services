@@ -17,7 +17,8 @@ my %WriteMakefileArgs = (
     "File::Find" => 0,
     "File::Temp" => 0,
     "Module::Build" => "0.3601",
-    "Test::More" => "0.88"
+    "Test::More" => "0.88",
+    "Test::Most" => 0
   },
   "CONFIGURE_REQUIRES" => {
     "File::ShareDir::Install" => "0.03",
@@ -35,7 +36,7 @@ my %WriteMakefileArgs = (
     "utf8" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001000",
+  "VERSION" => "0.002000",
   "test" => {
     "TESTS" => "t/*.t"
   }
