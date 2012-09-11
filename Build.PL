@@ -22,7 +22,7 @@ my %module_build_args = (
     "Adam Lesperance <lespea\@gmail.com>"
   ],
   "dist_name" => "Net-IANA-Services",
-  "dist_version" => "0.002000",
+  "dist_version" => "0.003000",
   "license" => "perl",
   "module_name" => "Net::IANA::Services",
   "recommends" => {},
