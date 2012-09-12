@@ -58,6 +58,7 @@ eval { $v .= pmver('Module::Build','0.3601') };
 eval { $v .= pmver('Test::More','0.88') };
 eval { $v .= pmver('Test::Most','any version') };
 eval { $v .= pmver('YAML::Any','any version') };
+eval { $v .= pmver('YAML::XS','any version') };
 eval { $v .= pmver('strict','any version') };
 eval { $v .= pmver('utf8','any version') };
 eval { $v .= pmver('warnings','any version') };

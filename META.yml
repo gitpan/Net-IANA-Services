@@ -29,6 +29,8 @@ no_index:
     - examples
   file:
     - README.html
+recommends:
+  YAML::XS: 0
 requires:
   Exporter::Easy: 0
   File::ShareDir: 0
@@ -41,7 +43,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Net-IANA-Services
   homepage: http://search.cpan.org/dist/Net-IANA-Services
   repository: git://github.com/lespea/net-iana-services.git
-version: 0.003000
+version: 0.003001
 x_Dist_Zilla:
   plugins:
     -
@@ -227,6 +229,14 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::ConfirmRelease
       name: '@Author::LESPEA/ConfirmRelease'
+      version: 4.300023
+    -
+      class: Dist::Zilla::Plugin::Prereqs
+      config:
+        Dist::Zilla::Plugin::Prereqs:
+          phase: runtime
+          type: recommends
+      name: Recommends
       version: 4.300023
     -
       class: Dist::Zilla::Plugin::Git::Check

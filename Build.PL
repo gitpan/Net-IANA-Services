@@ -22,10 +22,12 @@ my %module_build_args = (
     "Adam Lesperance <lespea\@gmail.com>"
   ],
   "dist_name" => "Net-IANA-Services",
-  "dist_version" => "0.003000",
+  "dist_version" => "0.003001",
   "license" => "perl",
   "module_name" => "Net::IANA::Services",
-  "recommends" => {},
+  "recommends" => {
+    "YAML::XS" => 0
+  },
   "recursive_test_files" => 1,
   "requires" => {
     "Exporter::Easy" => 0,

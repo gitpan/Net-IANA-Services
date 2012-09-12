@@ -40,6 +40,9 @@
          }
       },
       "runtime" : {
+         "recommends" : {
+            "YAML::XS" : "0"
+         },
          "requires" : {
             "Exporter::Easy" : "0",
             "File::ShareDir" : "0",
@@ -72,7 +75,7 @@
          "web" : "https://github.com/lespea/net-iana-services"
       }
    },
-   "version" : "0.003000",
+   "version" : "0.003001",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -303,6 +306,17 @@
          {
             "class" : "Dist::Zilla::Plugin::ConfirmRelease",
             "name" : "@Author::LESPEA/ConfirmRelease",
+            "version" : "4.300023"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::Prereqs",
+            "config" : {
+               "Dist::Zilla::Plugin::Prereqs" : {
+                  "phase" : "runtime",
+                  "type" : "recommends"
+               }
+            },
+            "name" : "Recommends",
             "version" : "4.300023"
          },
          {
