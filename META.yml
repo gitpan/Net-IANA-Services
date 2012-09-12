@@ -43,7 +43,7 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Net-IANA-Services
   homepage: http://search.cpan.org/dist/Net-IANA-Services
   repository: git://github.com/lespea/net-iana-services.git
-version: 0.003001
+version: 0.003002
 x_Dist_Zilla:
   plugins:
     -

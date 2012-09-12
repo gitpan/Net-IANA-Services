@@ -75,7 +75,7 @@
          "web" : "https://github.com/lespea/net-iana-services"
       }
    },
-   "version" : "0.003001",
+   "version" : "0.003002",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
