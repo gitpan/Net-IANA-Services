@@ -8,9 +8,19 @@ BEGIN {
 
 use strict;
 use warnings;
-use Test::More;
 
-eval 'use Test::NoTabs';
-plan skip_all => 'Test::NoTabs required' if $@;
+# this test was generated with Dist::Zilla::Plugin::Test::NoTabs 0.08
 
-all_perl_files_ok();
+use Test::More 0.88;
+use Test::NoTabs;
+
+my @files = (
+    'lib/Net/IANA/Services.pm',
+    't/00-compile.t',
+    't/000-report-versions-tiny.t',
+    't/01_quick.t',
+    't/02_examples.t'
+);
+
+notabs_ok($_) foreach @files;
+done_testing;
